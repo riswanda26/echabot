@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchaBotDTETI</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active align-self-center">
+                        <a class="nav-link" href="http://jteti.ugm.ac.id/">DTETI <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="http://papirus2.te.ugm.ac.id/">Papirus</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="http://teams.microsoft.com">Teams</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="https://elok.ugm.ac.id/">eLok</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="https://simaster.ugm.ac.id/">Portal Akademik</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="images/bg dteti.JPG" class="img-fluid">
+
+    <section class="herobwa mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                    <h1 class="mb-4">
+                        Echa Bot
+                    </h1>
+                    <p class="mb-4">
+                        Echa Bot atau Empathetic Chatbot Academic adalah agent percakapan virtual yang melayani pengguna dalam menjawab berbagai pertanyaan dan informasi akademik.
+                    </p>
+                   
+                </div>
+                <div class="col d-none d-sm-block">
+                    <img width="600" src="images/hero-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "9818c246-5e65-45ed-a91c-644ef1bee50e", // The ID of this integration.
+            region: "us-east", // The region your integration is hosted in.
+            serviceInstanceID: "87416a1f-af51-47cd-aa84-0158150ae1de", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+
+</html>
