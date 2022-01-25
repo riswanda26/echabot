@@ -4,16 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchaBotDTETI</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <title>Petunjuk Pengujian Chatbot</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+<style>
+
+    .site-section{
+        background-color: #f8f9fa;
+    }
+    .button1 {
+    background-color: #FFC500;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: white;
+    margin-bottom: 10%;
+    
+    }
+    .button1:hover {
+    background-color: #FBDD7B;
+    color: white;
+    }
+
+.button2 {
+    background-color: #152E47;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: white;
+    margin-bottom: 6%;
+    }
+    
+    .button2:hover {
+    background-color: #85929E;
+    color: white;
+    }
+    .text-center p{
+    margin-bottom: 5px;
+    color: black;
+    font-size: 14px;
+    font-family: 'Poppins';
+    }
+    .container p b{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    }
+    .col p{
+    color: black;
+    font-size: 14px;
+    font-family: 'Poppins';
+    }
+    .col p i{
+    color: black;
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: 'Poppins';
+}
+.teksgambar img{
+    background-image: url(images/Capture.JPG);
+}
+
+.teksgambar .d-flex{
+    background-image: url(images/Capture.JPG);
+    height: 150px;
+    position:relative;
+    
+    }
+
+    .teksgambar .d-flex .row p{
+        margin-top: 10%;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'Poppins';
+        
+        }
+</style>
+
 </head>
 
 <body>
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+<nav class="navbar navbar-expand-lg navbar-light bg-header">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -36,35 +120,75 @@
             </div>
         </div>
     </nav>
-
-    <img src="images/bg dteti.JPG" class="img-fluid">
-
-    <section class="herobwa mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col d-none d-sm-block">
-                    <img width="600" src="images/hero-icon.png" alt="">
+    
+    <div class="teksgambar">
+       
+        <div class="d-flex justify-content-center">
+            <div class="row ">
+                <div class="row-cols-sm-auto">
+                    <p class="text-center">Petunjuk Pengujian Chatbot</p>
                 </div>
-                <div class="col align-self-center">
-                    <h1 class="mb-4">
-                        Echa Bot
-                    </h1>
-                    <p class="mb-4">
-                        Echa Bot atau Empathetic Chatbot Academic adalah agen percakapan virtual yang melayani pengguna dalam menjawab berbagai pertanyaan dan informasi akademik Program Studi Sarjana Teknik Elektro dan Teknologi Informasi.
-                    </p>
-                   
-                </div>
+            </div>
+                
+            </div>
+    </div>
 
+
+
+    <div class="site-section">
+        
+        
+        <div class="container mb-4 ">
+
+            <h3 class="mt-4">
+                Echa Bot
+            </h3>
+            <p class="mb-4">
+                Echa Bot atau Empathetic Chatbot adalah agen percakapan virtual DTETI yang memiliki kemampuan empati untuk melayani pengguna dalam menjawab berbagai pertanyaan dan memberikan informasi seputar perkuliahan baik akademik maupun non akademik. 
+            </p>    
+            
+            <div class="row-md-4 bg-white">
+              <p><b>Berikut Langkah-langkah Pengujian Chatbot</b></p>
+              
+              <div class="col">
+                <p>1. Mengakses dan memulai percakapan dengan chatbot pada link yang telah disediakan.</p>
+                <p>2. Menanyakan 2-3 hal mengenai informasi perkuliahan, akademik atau non akademik.</p>
+                <p><i>Contoh: (Info KRS, info Kerja Praktik/KP, apa saja syarat ujian pendadaran, info akreditasi prod, dst.) </i></p>
+                <p>3. Mengungkapkan perasaan sedih terkait problem perkuliahan, akademik atau non akademik anda.</p>
+                <p><i>Contoh: (Aku sedih karena belum lulus sampai saat ini, dst)</i></p>
+                <p>4. Mengungkapkan perasaan senang anda terkait perkuliahan, akademik atau non akademik anda.</p>
+                <p><i>Contoh: (Aku merasa senang karena nilai ujianku bagus, dst)</i></p>
+                <p>5. Mengakhiri percakapan dengan chatbot.</p>
+                <p><i>Contoh: (terima kasih atas bantuannya, terima kasih sudah membantu, dst)</i></p>
+              </div>
             </div>
         </div>
-    </section>
+        
+    </div>
+    
+    
 
-
+    </div>
+        
+    
+    <script>3
+        window.watsonAssistantChatOptions = {
+            integrationID: "c8fa7bc2-39f0-45df-8893-659664a5f04e", // The ID of this integration.
+            region: "us-east", // The region your integration is hosted in.
+            serviceInstanceID: "87416a1f-af51-47cd-aa84-0158150ae1de", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
     <script>
         window.watsonAssistantChatOptions = {
