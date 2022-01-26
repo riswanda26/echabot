@@ -170,39 +170,19 @@
 
     </div>
         
-    
-    <script>3
-        window.watsonAssistantChatOptions = {
-            integrationID: "c8fa7bc2-39f0-45df-8893-659664a5f04e", // The ID of this integration.
-            region: "us-east", // The region your integration is hosted in.
-            serviceInstanceID: "87416a1f-af51-47cd-aa84-0158150ae1de", // The ID of your service instance.
-            onLoad: function(instance) { instance.render(); }
-          };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
-          document.head.appendChild(t);
-        });
-      </script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
-    <script>
-        window.watsonAssistantChatOptions = {
-            integrationID: "9818c246-5e65-45ed-a91c-644ef1bee50e", // The ID of this integration.
-            region: "us-east", // The region your integration is hosted in.
-            serviceInstanceID: "87416a1f-af51-47cd-aa84-0158150ae1de", // The ID of your service instance.
-            onLoad: function(instance) { instance.render(); }
-          };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
-          document.head.appendChild(t);
-        });
-      </script>
+  <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "9818c246-5e65-45ed-a91c-644ef1bee50e", // The ID of this integration.
+      region: "us-east", // The region your integration is hosted in.
+      serviceInstanceID: "87416a1f-af51-47cd-aa84-0158150ae1de", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 
 </html>
